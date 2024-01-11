@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script>
+            function enviedades (desti)
+            {
+                document1.formulari1.action = desti;
+                document1.formulari1.submit();
+            }
+        </script>
+    </head>
+    <body>
+        <div>EXEMPLE DE FORMULARIS</div>
+        <form name="formulari1" action="mailto: jesusmtimoneda@gmail.com" method="POST">
+            Escriu el teu cognom <input type="text" name="cognom" value="" size="10" />
+            <br>
+            Introdueix comentaris:
+            <br>
+            <textarea name="comentaris" rows="4" cols="20">
+            </textarea>
+            <br>
+             Tria color :
+             <select name="colors">
+                <option VALUE = "R"> Roig</option>
+                <option VALUE = "B"> Blau</option>
+                <option VALUE = "V"> Vert</option>
+                <option VALUE = "T" selected="T"> Taronja</option>
+             </select>
+             <br>
+             Marca els temes que t'interessen:
+             <br>
+             <input type="checkbox" name="tema" value="jardineria" /> Jardineria
+             <br>
+             <input type="checkbox" name="tema" value="música" /> Música
+             <br>
+             <input type="checkbox" name="tema" value="Programació" checked = "checked" /> Programació
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             Quin és el teu Sistema Operatiu preferit?
+             <br>
+             <input type="radio" name="so" value="W" /> Windows
+             <input type="radio" name="so" value="linux" checked="checked" /> Linux
+             <input type="radio" name="so" value="iOS" /> iOS
+             <br>
+             <input type="submit" value="enviar" name="enviar" />
+             <input type="reset" value="borrar" name="borrar" />
+             <input type="submit" value="envio alternatiu" onclick = "enviedades('mailto: iesjuandegary@gmail.com');"/>
+        </form>
+    </body>
+</html>

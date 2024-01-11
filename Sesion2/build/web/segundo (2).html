@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script>
+        function envioDatos(destino)
+        {
+                document.Formulario1.action=destino;
+                document.Formulario1.submit();
+        }
+    </script>
+    
+  </head>
+  <body>
+      <form name="Formulario1"  action="mailto: jesusmtimoneda@gmail.com" method="POST" enctype="text/plain">
+          Escribe tu apellido <input type="text" name="Apellido" value="" size="10" />
+          <BR>
+          Introduce tus comentarios
+          <BR>
+          <textarea name="comentarios" rows="4" cols="20">
+          </textarea>
+          <BR>Elige tu color preferido
+          <BR>
+          <select name="ColoresPreferidos">
+              <option value="R">Rojo</option>
+              <option value="A">Azul</option>
+              <option value="M">Marrón</option>
+              <option value="N" selected>Naranja</option>
+              <option value="V">Verde</option>
+          </select>
+          
+          <BR>
+          Elige los temas que te interesan
+          <BR>
+          <input type="checkbox" name="Tema" value="Jardineria" />Jardineria
+          <BR>
+          <input type="checkbox" name="Tema" value="Programacion" />Programacion
+          <BR>
+          <input type="checkbox" name="Tema" value="Salud" checked="checked" />Salud
+          <BR>
+          ¿Cuál es tu sistema operativo preferido? 
+          <BR>
+          <input type="radio" name="SOperativo" value="W" />Windows
+          <input type="radio" name="SOperativo" value="L" checked="checked" />Linux
+          <input type="radio" name="SOperativo" value="M" />MAC
+          <BR>
+          <input type="submit" value="Enviar datos" />
+          <input type="reset" value="Borrar datos" />
+          <input type="button" value="Envio alternativo" 
+          onclick="envioDatos('mailto:iesjuandegaray@gmail.com');"/>
+      </form>
+      
+  </body>
+</html>
