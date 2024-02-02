@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>MostrarClientes</servlet-name>
+        <servlet-class>Presentation.MostrarClientes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MostrarFacturasCliente</servlet-name>
+        <servlet-class>Presentation.MostrarFacturasCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MostrarDetallesCliente</servlet-name>
+        <servlet-class>Presentation.MostrarDetallesCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>Presentation.Controller</servlet-class>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>MostrarClientes</servlet-name>
+        <url-pattern>/MostrarClientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MostrarFacturasCliente</servlet-name>
+        <url-pattern>/MostrarFacturasCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MostrarDetallesCliente</servlet-name>
+        <url-pattern>/MostrarDetallesCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/Controller</url-pattern>
+    </servlet-mapping>
+        <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error.jsp</location>
+    </error-page>
+</web-app>
