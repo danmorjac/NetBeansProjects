@@ -10,10 +10,8 @@ if (trySesion == null)  { %>
     <a href="Controller?opID=MostrarClientes">Clientes</a>
     <br>
     <a href="Controller?opID=EditaFactura">Comprar</a>
-    <br>
-    <a href="Controller?opID=Google">Mapa de google</a>
     <br>    
-    <a href="Controller?opID=Ejercicio2">Ver Facturas</a>
+    <a href="Controller?opID=ListaFacturas">Ver Facturas</a>
     <br>
     <a href="Controller?opID=MostrarEditarPerfil">Editar Perfil</a>
     <br>

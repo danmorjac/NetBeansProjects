@@ -1,0 +1,1 @@
+<h2>Factura eliminada con éxito.</h2>

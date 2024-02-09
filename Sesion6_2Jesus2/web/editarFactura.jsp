@@ -30,6 +30,7 @@ Añadir articulo
               if(articuloExistente.getId() == articuloExcluir.getId()) {
                 //...si se encuentra, se elimina de la lista que mostraremos en el desplegable.
                 listadoArticulosImprimibles.remove(i);
+                i--;
               }
             }
           }
@@ -74,7 +75,7 @@ Cantidad:<input type="text" name="cantidad" value="" />
           <td><%=_articulo.getDescripcion()%></td>
           <td><%=_articulo.getCantidadComprada()%></td>  
           <td>
-            <a href="Controller?opID=BorrarFactura&&idFactura=<jsp:getProperty name="FacturaCliente" property="id"/>&&borraArticulo=<%=_articulo.getId()%>">
+            <a href="Controller?opID=BorrarLineaFactura&&idFactura=<jsp:getProperty name="FacturaCliente" property="id"/>&&borraArticulo=<%=_articulo.getId()%>&&cantidad=<%=_articulo.getCantidadComprada()%>">
               Borrar
             </a>
           </td>

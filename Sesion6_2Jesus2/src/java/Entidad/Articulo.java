@@ -7,7 +7,7 @@ package Entidad;
 
 /**
  *
- * @author victor
+ * 
  */
 public class Articulo {
 private int Id;

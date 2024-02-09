@@ -16,7 +16,7 @@ public class LoginCommand extends ICommand{
         Cliente _cliente=new Cliente();//Crea un objeto Cliente los datos ingresados
         _cliente.setNick(request.getParameter("Nick"));
         _cliente.setPassword(request.getParameter("Password"));
-        Cliente admin=new Cliente();
+        //Cliente admin=new Cliente();
 
         ClienteBLL _clienteBLL = new ClienteBLL();
         _cliente=_clienteBLL.validaCliente(_cliente);

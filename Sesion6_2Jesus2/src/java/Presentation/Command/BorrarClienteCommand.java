@@ -25,8 +25,8 @@ public class BorrarClienteCommand extends ICommand{
         response.setContentType("text/html;charset=UTF-8");
         String operacion = request.getParameter("opID");
         try {
-          if(operacion.equals("BorrarCliente") && request.getParameter("dni") != "") {
-            int id_dni = Integer.parseInt(request.getParameter("dni"));
+          if(operacion.equals("BorrarCliente") && request.getParameter("clienteElegido") != "") {
+            int id_dni = Integer.parseInt(request.getParameter("clienteElegido"));
             ClienteBLL _clienteBLL = new ClienteBLL();
             _clienteBLL.eliminaCliente(id_dni);
           }
@@ -36,6 +36,6 @@ public class BorrarClienteCommand extends ICommand{
         finally {
         }
     
-        return "/menu.jsp";          
+        return "/eliminaUsuarioRealizado.jsp";          
     }
 }
